@@ -17,7 +17,7 @@ Some of the code was provided to us as setup (`bmp_io` , `scene_object` , `main`
 
 ### Octree Optimization
 
-![TestImage](https://github.com/broliver12/raytracer/blob/master/images/octree.jpg)
+![TestImage](https://github.com/broliver12/raytracer/blob/main/images/octree.jpg)
 
 ### Environment mapping
 
