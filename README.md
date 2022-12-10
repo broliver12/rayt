@@ -13,20 +13,6 @@ The contributors to this submission were myself, Oliver Straszynski, and Jacob R
 
 Some of the code was provided to us as setup (`bmp_io` , `scene_object` , `main`, others), and attribution to the original code authors is made on those individual files.
 
-## Effects & Optimizations
-
-### Octree Optimization
-
-![TestImage](https://github.com/broliver12/rayt/blob/main/images/octree.jpg?raw=true)
-
-### Environment mapping
-
-### Cube Mapping
-
-### Ambient Diffuse & Specular Reflection
-
-### Anti Aliasing
-
 ## Usage
 
 - Install g++
@@ -38,6 +24,20 @@ Some of the code was provided to us as setup (`bmp_io` , `scene_object` , `main`
 - execute `./raytracer`
 
 - See output in `/output_images`
+
+## Effects & Optimizations
+
+### Octree Optimization
+
+<img width=160 height=160 src="https://github.com/broliver12/raytracer/blob/main/images/octree.jpg?raw=true"/>
+
+### Environment mapping
+
+### Cube Mapping
+
+### Ambient Diffuse & Specular Reflection
+
+### Anti Aliasing
 
 ## License
 
