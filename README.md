@@ -62,4 +62,4 @@ Uses multiple pixels around a ray's intersection point to calculate colour. Resu
 
 ## License
 
-!UNLICENSED[https://github.com/broliver12/raytracer/blob/main/LICENSE.txt]
+![UNLICENSED](https://github.com/broliver12/raytracer/blob/main/LICENSE.txt)
