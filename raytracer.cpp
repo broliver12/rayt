@@ -23,7 +23,7 @@
 
 Raytracer::Raytracer() : _lightSource(NULL) {
 	_root = new SceneDagNode();
-	use_cubemap = true;
+	use_cubemap = false;
 	octreeUsed = false;
 	antialias = false;
 	reflection_depth = 10;
@@ -580,17 +580,17 @@ void CubeMap::set_face_images() {
 	// we store the cube map
 	// as six square .bmp images
 	face0 = new Texture();
-	face0->loadBitmap("textures/mountain_cube_map/side1.bmp"); // pos_x
+	face0->loadBitmap("textures/gas_station_cube_map/side1.bmp"); // pos_x
 	face1 = new Texture();
-	face1->loadBitmap("textures/mountain_cube_map/side3.bmp"); // neg_x
+	face1->loadBitmap("textures/gas_station_cube_map/side3.bmp"); // neg_x
 	face2 = new Texture();
-	face2->loadBitmap("textures/mountain_cube_map/side6.bmp"); // pos_y
+	face2->loadBitmap("textures/gas_station_cube_map/side6.bmp"); // pos_y
 	face3 = new Texture();
-	face3->loadBitmap("textures/mountain_cube_map/side5.bmp"); // neg_y
+	face3->loadBitmap("textures/gas_station_cube_map/side5.bmp"); // neg_y
 	face4 = new Texture();
-	face4->loadBitmap("textures/mountain_cube_map/side2.bmp"); // pos_z
+	face4->loadBitmap("textures/gas_station_cube_map/side2.bmp"); // pos_z
 	face5 = new Texture();
-	face5->loadBitmap("textures/mountain_cube_map/side4.bmp"); // neg_z
+	face5->loadBitmap("textures/gas_station_cube_map/side4.bmp"); // neg_z
 }
 
 Colour CubeMap::query_bmp_cube_map(Vector3D direction)
@@ -664,7 +664,9 @@ Colour Raytracer::octreeShadeRay(Ray3D& ray, int depth){
         col = ray.col;
     }
 	else {
-
+		if (use_cubemap){
+			col = cube_map->query_bmp_cube_map(ray.dir);
+		}
 	}
 	
     return col;

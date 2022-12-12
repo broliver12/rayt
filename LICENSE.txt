@@ -1,0 +1,6 @@
+Authors: Oliver Straszynski, Jacob Ritchie, Jack Wang (Starter Code)
+
+UNLICENSED DO NOT REPRODUCE
+
+This code lives online as a reference only.
+Do not use this code as a submission for CSC418 at UofT, or for any other university course.

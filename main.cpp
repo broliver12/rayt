@@ -30,8 +30,8 @@ int main(int argc, char* argv[])
 	// change this if you're just implementing part one of the 
 	// assignment.  
 
-	int width = 960;
-	int height = 640;
+	int width = 4800;
+	int height = 3600;
 
 	if (argc == 3) {
 		width = atoi(argv[1]);	
@@ -47,14 +47,13 @@ int main(int argc, char* argv[])
 	
 	cube_map_scene(width,height);
 	// area_light_scene(width,height);
-	// reflections_scene(width,height);
-	//texture_scene(width,height);
+	reflections_scene(width,height);
+	texture_scene(width,height);
 	//octree_scene(width,height);
 	//antialias_scene(width,height);
 	//plane_texture_scene(width,height);
 
-	// return default_scene(width, height);
-	return 0;
+	return default_scene(width, height);
 }
 
 
@@ -89,7 +88,7 @@ int texture_scene(int width, int height) {
 	raytracer.addLightSource(a);
 
 	double factor2[3] = { 9.0, 9.0, 9.0 };
-	SceneDagNode* plane4 = raytracer.addObject(new UnitSquare(), &red);
+	SceneDagNode* plane4 = raytracer.addObject(new UnitSquare(), &blue);
 
 
 	raytracer.translate(plane4, Vector3D(-3, 0, 0));
@@ -159,11 +158,11 @@ int reflections_scene(int width, int height) {
 	raytracer.scale(plane4, Point3D(0, 0, 0), factor2);
 
 
-	SceneDagNode* sphere = raytracer.addObject(new UnitSphere(), &green);
+	SceneDagNode* sphere = raytracer.addObject(new UnitSphere(), &gold);
 	raytracer.translate(sphere, Vector3D(0, 0, -7));
-	SceneDagNode* sphere2 = raytracer.addObject(new UnitSphere(), &red);
+	SceneDagNode* sphere2 = raytracer.addObject(new UnitSphere(), &gold);
 	raytracer.translate(sphere2, Vector3D(-1, 1, -6));
-	SceneDagNode* sphere3 = raytracer.addObject(new UnitSphere(), &blue);
+	SceneDagNode* sphere3 = raytracer.addObject(new UnitSphere(), &gold);
 	raytracer.translate(sphere3, Vector3D(-1, -1, -6));
 	
 	double factor3[3] = { 0.8, 0.8, 0.8 };

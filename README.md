@@ -25,20 +25,41 @@ Some of the code was provided to us as setup (`bmp_io` , `scene_object` , `main`
 
 - See output in `/output_images`
 
-## Effects & Optimizations
+---
 
 ### Octree Optimization
 
-<img width=160 height=160 src="https://github.com/broliver12/raytracer/blob/main/images/octree.jpg?raw=true"/>
+An Octree is a 3D space partitioning data structure that allows us to dramatically improve the efficiency of raytracing.
 
-### Environment mapping
+By splitting the virtual 3D space into segments, and determine which object lie in which segments.
+Then, we calculate which segment a ray is currently traversing, which dramatically reduces the number of objects that the ray may interact with.
+
+<img width=500 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/octree.png?raw=true"/>
 
 ### Cube Mapping
 
-### Ambient Diffuse & Specular Reflection
+Cube mapping allows us to place objects inside a virtual cube. The inside of this cube forms a 3D view of any scene.
+
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/cube.png?raw=true"/>
+
+### Texture Mapping
+
+Map textures onto a virtual 3D object. 
+
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/globe.png?raw=true"/>
+
+### Phong Reflection Model
+
+Each stage of the Phong model is implemented individually.
+
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/reflect.png?raw=true"/>
 
 ### Anti Aliasing
 
+Uses multiple pixels around a ray's intersection point to calculate colour. Result is a smoother, more realistic final image.
+
+---
+
 ## License
 
-This project is provided open source under the following MIT license.
+UNLICENSED["https://github.com/broliver12/raytracer/blob/main/LICENSE.txt"/]
