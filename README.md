@@ -40,19 +40,19 @@ Then, we calculate which segment a ray is currently traversing, which dramatical
 
 Cube mapping allows us to place objects inside a virtual cube. The inside of this cube forms a 3D view of any scene.
 
-<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/cube.png?raw=true"/>
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/cube.bmp?raw=true"/>
 
 ### Texture Mapping
 
 Map textures onto a virtual 3D object. 
 
-<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/globe.png?raw=true"/>
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/globe.bmp?raw=true"/>
 
 ### Phong Reflection Model
 
 Each stage of the Phong model is implemented individually.
 
-<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/reflect.png?raw=true"/>
+<img width=250 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/reflect.bmp?raw=true"/>
 
 ### Anti Aliasing
 
