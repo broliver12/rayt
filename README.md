@@ -34,7 +34,7 @@ An Octree is a 3D space partitioning data structure that allows us to dramatical
 By splitting the virtual 3D space into segments, and determine which object lie in which segments.
 Then, we calculate which segment a ray is currently traversing, which dramatically reduces the number of objects that the ray may interact with.
 
-<img width=500 height=250 src="https://github.com/broliver12/raytracer/blob/main/images/octree.png?raw=true"/>
+<img width=480 height=360 src="https://github.com/broliver12/raytracer/blob/main/images/octree.png?raw=true"/>
 
 ### Cube Mapping
 
